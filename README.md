@@ -1,6 +1,6 @@
 # Sorting Algos
 
-Meme repo with funny sorting algos cause why not.
+Meme repo with funny sorting algos cause why not. See https://sorting.seufert.sh/
 
 ```bash
 vp install # Install dependencies
