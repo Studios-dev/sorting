@@ -7,7 +7,10 @@
     "dev": "vp dev",
     "build": "tsc && vp build",
     "preview": "vp preview",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "workers:dev": "vp build && wrangler dev",
+    "workers:dry-run": "vp build && wrangler deploy --dry-run",
+    "workers:deploy": "vp build && wrangler deploy"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -26,7 +29,8 @@
     "tailwindcss": "^4.2.2",
     "typescript": "~5.9.3",
     "vite": "npm:@voidzero-dev/vite-plus-core@latest",
-    "vite-plus": "latest"
+    "vite-plus": "latest",
+    "wrangler": "latest"
   },
   "packageManager": "pnpm@10.33.0",
   "pnpm": {

@@ -8,7 +8,25 @@ vp dev # Start the dev server
 vp check # Format, lint, type-check
 vp test # Run JavaScript tests
 vp build # Build for production
+vp run workers:dev # Build and preview with Cloudflare Workers locally
+vp run workers:dry-run # Build and validate a Wrangler deploy without publishing
+vp run workers:deploy # Build and deploy to Cloudflare Workers
 ```
+
+## Cloudflare Workers
+
+This repo is configured for static asset deployment on Cloudflare Workers using `wrangler.jsonc`.
+
+```bash
+vp install
+vp run workers:dev
+```
+
+Important files:
+
+- `wrangler.jsonc` serves the built `dist` folder as Workers Assets.
+- SPA routing is enabled via `assets.not_found_handling = "single-page-application"`.
+- Local Wrangler state and `.dev.vars` files are ignored by git.
 
 Old stuff from agents.md:
 
