@@ -10,7 +10,6 @@ vp test # Run JavaScript tests
 vp build # Build for production
 ```
 
-
 Old stuff from agents.md:
 
 # Using Vite+, the Unified Toolchain for the Web
@@ -97,5 +96,4 @@ For GitHub Actions, consider using [`voidzero-dev/setup-vp`](https://github.com/
 ## Review Checklist for Agents
 
 - [ ] Run `vp install` after pulling remote changes and before getting started.
-- [ ] 
-<!--VITE PLUS END-->
+- [ ] <!--VITE PLUS END-->
