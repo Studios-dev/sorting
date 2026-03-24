@@ -4,6 +4,11 @@ import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
   plugins: [react(), babel({ presets: [reactCompilerPreset()] }), tailwindcss()],
   staged: {
     "*": "vp check --fix",
